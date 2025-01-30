@@ -1,11 +1,4 @@
-# Node.js
 node_modules/
-npm-debug.log*
 .env
-
-# React
 build/
-
-# Logs
-logs/
-*.log
+.DS_Store
