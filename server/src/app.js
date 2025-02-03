@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 app.use(express.json()); // Parse JSON request body
 app.use(cors()); // Enable CORS
 
-// ✅ Health Check Route - Ensure it's defined correctly
+// ✅ Health Check Route
 app.get("/", (req, res) => {
   console.log("✅ Health check endpoint hit!");
   res.status(200).send("🚀 Community Connect API is running...");

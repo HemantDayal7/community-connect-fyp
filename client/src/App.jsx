@@ -1,11 +1,16 @@
 import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { AuthProvider } from "./context/AuthContext";
+import RoutesComponent from "./routes/Routes";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>🚀 Community Connect App is Running!</h1>
-    </div>
+    <AuthProvider>
+      <Router>
+        <RoutesComponent />
+      </Router>
+    </AuthProvider>
   );
-}
+};
 
 export default App;
